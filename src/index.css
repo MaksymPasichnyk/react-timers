@@ -1,13 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#timers {
+  text-align: center;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.button {
+  border: 1px solid blue;
+  color: blue;
+  font-size: 18px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: rgb(220, 215, 215);
+  width: 100%;
+}
+
+.title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+}
+
+/* TIMER DASHBOARD */
+.timer-dashboard {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.timer-dashboard__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+	width: 350px;
+}
+
+/* TIMER */
+.timer {
+  border: 1px solid grey;
+}
+
+.timer__content {
+  padding: 10px;
+}
+
+.timer__header,
+.timer__meta {
+  text-align: left;
+}
+
+.timer__header {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.timer__meta {
+  font-size: 14px;
+  font-size: gray;
+  font-style: italic;
+}
+
+.timer__actions {
+  text-align: right;
+}
+
+/* TIMER-FORM */
+.timer-f {
+  border: 1px solid gray;
+	padding: 10px;
+}
+
+.form-timer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-timer__field {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-timer__field label {
+  margin-bottom: 5px;
+}
+
+.form-timer__field input {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  font-size: 17px;
+}
+
+.form-timer__buttons {
+  display: flex;
 }
